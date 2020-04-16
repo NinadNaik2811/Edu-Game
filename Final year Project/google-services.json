@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "42606685827",
+    "firebase_url": "https://edu-game-b7fd3.firebaseio.com",
+    "project_id": "edu-game-b7fd3",
+    "storage_bucket": "edu-game-b7fd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42606685827:android:c30d32c8de7b45a1",
+        "android_client_info": {
+          "package_name": "com.finalyearproject.edu_teach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42606685827-tas6an096ds52dkfl9vi3auuousrdgj6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finalyearproject.edu_teach",
+            "certificate_hash": "74bad11c83d2953ae18b3c7b452b7be700906912"
+          }
+        },
+        {
+          "client_id": "42606685827-33thriqj28hugbqg0midpup1vhm23aig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATPNZ6UipEa7K9hMQF9XI63QZilUtXS8o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42606685827-33thriqj28hugbqg0midpup1vhm23aig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

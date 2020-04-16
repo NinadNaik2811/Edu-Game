@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Edu-Teach</string>
+    <string name="classHeader">Class</string>
+    <string name="subjectHeader">Subject</string>
+    <!--Login and main-->
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome!</string>
+    <string name="takeASec">(This will only take a sec)</string>
+    <string name="instWelcome">Please check your Email Id and Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <!--Main Menu-->
+    <string name="signout">Sign Out</string>
+    <string name="mainMenu">Main Menu</string>
+    <!--Faculty-->
+    <string name="unapproved">Sorry!\nUnder Approval</string>
+    <string name="attendance">Attendance</string>
+    <string name="viewSubject">View Subject</string>
+    <string name="material">Study Material</string>
+    <string name="assignment">Assignment</string>
+    <string name="exam">Exam Marks</string>
+    <!--head-->
+    <string name="students">Students</string>
+    <string name="faculty">Faculty</string>
+    <string name="classes">Classes</string>
+    <string name="approve">Approve</string>
+    <string name="reset">Reset</string>
+    <string name="resetInstruction">Type \"Reset\" to approve</string>
+    <string name="moreClasses">Add more classes</string>
+    <string name="allow">Allow</string>
+    <!--AssignmentOrMaterial and Study Material-->
+    <string name="upload">Upload</string>
+    <string name="or">OR</string>
+    <string name="ok">OK</string>
+    <string name="title">Title</string>
+    <string name="time">Date of Submission</string>
+    <string name="description">Description(Optional)</string>
+    <string name="submit">Submit</string>
+    <string name="link">Enter Google Drive Link</string>
+    <string name="eval">Evaluate</string>
+    <string name="title_activity_upload_or_evaluate">UploadOrEvaluate</string>
+    <string name="confirm">Confirm</string>
+    <string name="mks">MKS</string>
+</resources>

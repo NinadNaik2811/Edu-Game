@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:padding="@dimen/one"
+        android:textColor="@color/white"
+        android:textSize="@dimen/clickableTextView">
+
+    </com.finalyearproject.edu_teach.ChalkTextView>
+
+    <com.finalyearproject.edu_teach.ChalkEditText
+        android:id="@+id/studentMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:padding="@dimen/one"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/clickableTextView">
+
+    </com.finalyearproject.edu_teach.ChalkEditText>
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/studentConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:padding="@dimen/one"
+        android:textColor="@color/white"
+        android:text="@string/ok"
+        android:textAlignment="center"
+        android:textSize="@dimen/clickableTextView">
+
+    </com.finalyearproject.edu_teach.ChalkTextView>
+
+</LinearLayout>

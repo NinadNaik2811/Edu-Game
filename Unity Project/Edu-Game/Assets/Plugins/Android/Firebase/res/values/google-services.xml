@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="firebase_database_url" translatable="false">https://edu-game-b7fd3.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">42606685827</string>
+  <string name="google_storage_bucket" translatable="false">edu-game-b7fd3.appspot.com</string>
+  <string name="google_api_key" translatable="false">AIzaSyATPNZ6UipEa7K9hMQF9XI63QZilUtXS8o</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyATPNZ6UipEa7K9hMQF9XI63QZilUtXS8o</string>
+  <string name="google_app_id" translatable="false">1:42606685827:android:c30d32c8de7b45a1</string>
+  <string name="default_web_client_id" translatable="false">42606685827-33thriqj28hugbqg0midpup1vhm23aig.apps.googleusercontent.com</string>
+</resources>

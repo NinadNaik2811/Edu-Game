@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.finalyearproject.edu_teach">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FacultyMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".HeadMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".StudyMaterialAndAssignmentActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".FacultyAddActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FacultyListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ClassAssignActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ClassListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ResetActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ListMarkableAndPreviousActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".UploadOrEvaluateActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".EvaluateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+    </application>
+
+</manifest>

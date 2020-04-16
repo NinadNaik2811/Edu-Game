@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html ng-app="EduStudentApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edu-Student | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="Admin/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Admin/css/AdminLTE.min.css">
+
+    <link rel="stylesheet" href="Admin/css/skin-blue.min.css">
+
+
+  </head>
+
+
+  <body class="hold-transition skin-blue sidebar-mini" ng-controller="EduStudentController">
+    <div class="wrapper">
+
+      <!-- Main Header -->
+      <header class="main-header">
+
+        <!-- Logo -->
+        <a href="" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>ES</b></span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>Edu</b>-Student</span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+          <!-- Sidebar Menu -->
+          <ul class="sidebar-menu">
+            <li class="header">HEADER</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active treeview">
+                <a href="#" id="studyMaterial"><i class="fa fa-book"></i> <span>Study Material</span><i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                  <li><a href="#" ng-click="showList('material/Languages','Languages','Study Material')">Languages</a></li>
+                  <li><a href="#" ng-click="showList('material/Mathematics','Mathematics','Study Material')">Mathematics</a></li>
+                  <li><a href="#" ng-click="showList('material/Science','Science','Study Material')">Science</a></li>
+                  <li><a href="#" ng-click="showList('material/Social Studies','Social Studies','Study Material')">Social Studies</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+              <a href="#" id="assignment"><i class="fa fa-home"></i> <span>Assignments</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#" ng-click="showList('assignment/Languages','Languages','Assignment')">Languages</a></li>
+                <li><a href="#" ng-click="showList('assignment/Mathematics','Mathematics','Assignment')">Mathematics</a></li>
+                <li><a href="#" ng-click="showList('assignment/Science','Science','Assignment')">Science</a></li>
+                <li><a href="#" ng-click="showList('assignment/Social Studies','Social Studies','Assignment')">Social Studies</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#" id="marks"><i class="fa fa-university"></i> <span>Exam Marks</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li class="treeview">
+                  <a href="#">UT<i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li class="treeview">
+                      <a href="#">UT 1</a>
+                      <ul class="treeview-menu">
+                        <li><a href="#" ng-click="showListForExam('UT/Languages/0','Languages','Unit Test 1')">Languages</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Mathematics/0','Mathematics','Unit Test 1')">Mathematics</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Science/0','Science','Unit Test 1')">Science</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Social Studies/0','Social Studies','Unit Test 1')">Social Studies</a></li>
+                      </ul>
+                    </li>
+                    <li class="treeview">
+                      <a href="#">UT 2</a>
+                      <ul class="treeview-menu">
+                        <li><a href="#" ng-click="showListForExam('UT/Languages/1','Languages','Unit Test 2')">Languages</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Mathematics/1','Mathematics','Unit Test 2')">Mathematics</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Science/1','Science','Unit Test 2')">Science</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Social Studies/1','Social Studies','Unit Test 2')">Social Studies</a></li>
+                      </ul>
+                    </li>
+                    <li class="treeview">
+                      <a href="#">UT 3</a>
+                      <ul class="treeview-menu">
+                        <li><a href="#" ng-click="showListForExam('UT/Languages/2','Languages','Unit Test 3')">Languages</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Mathematics/2','Mathematics','Unit Test 3')">Mathematics</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Science/2','Science','Unit Test 3')">Science</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Social Studies/2','Social Studies','Unit Test 3')">Social Studies</a></li>
+                      </ul>
+                    </li>
+                    <li class="treeview">
+                      <a href="#">UT 4</a>
+                      <ul class="treeview-menu">
+                        <li><a href="#" ng-click="showListForExam('UT/Languages/3','Languages','Unit Test 4')">Languages</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Mathematics/3','Mathematics','Unit Test 4')">Mathematics</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Science/3','Science','Unit Test 4')">Science</a></li>
+                        <li><a href="#" ng-click="showListForExam('UT/Social Studies/3','Social Studies','Unit Test 4')">Social Studies</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <li class="treeview">
+                    <a href="#">End Semester<i class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                      <li class="treeview">
+                        <a href="#">Mid Term Exam</a>
+                        <ul class="treeview-menu">
+                          <li><a href="#" ng-click="showListForExam('EndSem/Languages/0','Languages','Mid Term Exam')">Languages</a></li>
+                          <li><a href="#" ng-click="showListForExam('EndSem/Mathematics/0','Mathematics','Mid Term Exam')">Mathematics</a></li>
+                          <li><a href="#" ng-click="showListForExam('EndSem/Science/0','Science','Mid Term Exam')">Science</a></li>
+                          <li><a href="#" ng-click="showListForExam('EndSem/Social Studies/0','Social Studies','Mid Term Exam')">Social Studies</a></li>
+                        </ul>
+                      </li>
+                      <li class="treeview">
+                        <a href="#">Final Exam</a>
+                        <ul class="treeview-menu">
+                          <li><a href="#" ng-click="showListForExam('EndSem/Languages/1','Languages','Final Exam')">Languages</a></li>
+                          <li><a href="#" ng-click="showListForExam('EndSem/Mathematics/1','Mathematics','Final Exam')">Mathematics</a></li>
+                          <li><a href="#" ng-click="showListForExam('EndSem/Science/1','Science','Final Exam')">Science</a></li>
+                          <li><a href="#" ng-click="showListForExam('EndSem/Social Studies/1','Social Studies','Final Exam')">Social Studies</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            {{header}}
+            <small>{{headerSmall}}</small>
+          </h1>
+
+        </section>
+
+        <!-- Main content -->
+        <section class="content" id="contentList">
+          <div ng-show="isDataAvailable==-1">
+            Welcome Student!   Please wait!
+          </div>
+          <div ng-show="isDataAvailable==0">
+              Welcome Student!   Please Select an item from the sidebar
+          </div>
+          <div ng-show="isDataAvailable==1">
+            <table class="table">
+              <tr>
+                <th style="text-align: center;">Title</th>
+                <th style="text-align: center;">Link</th>
+                <th style="text-align: center;">Description</th>
+                <th style="text-align: center;">Date of Submission</th>
+              </tr>
+              <tr ng-repeat="item in allInfo">
+                <td style="text-align: center;">
+                  {{item.title}}
+                </td>
+                <td style="text-align: center;">
+                  {{item.link}}
+                </td>
+                <td style="text-align: center;">
+                  {{item.description}}
+                </td>
+                <td style="text-align: center;">
+                  {{item.dateOfSubmission.day}}-
+                  {{item.dateOfSubmission.month}}-
+                  {{item.dateOfSubmission.year}}
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div ng-show="isDataAvailable==2">
+            No Data Found</br>
+          </div>
+          <div ng-show="isDataAvailable==3">
+            <table class="table">
+              <tr>
+                <th style="text-align: center;">Marks</th>
+              </tr>
+              <tr ng-repeat="item in allInfoExam">
+                <td style="text-align: center;">
+                  {{item.marks}}
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2015 <a href="#">Edu-Game</a>.</strong> All rights reserved.
+      </footer>
+
+
+    </div><!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+    <script src="js/angular.min.js"></script>
+
+    <script src="js/firebase.js"></script>
+
+    <script src="js/angularfire.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <!-- jQuery 2.1.4 -->
+    <script src="Admin/js/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="Admin/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Admin/js/app.min.js"></script>
+
+  </body>
+</html>

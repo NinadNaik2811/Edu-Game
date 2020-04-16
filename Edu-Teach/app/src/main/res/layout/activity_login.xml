@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.finalyearproject.edu_teach.LoginActivity">
+
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="@dimen/headerTextSize"
+        android:textColor="@color/white" />
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/instWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_marginTop="@dimen/one"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instWelcome"
+        android:textAlignment="center"
+        android:textSize="@dimen/footerTextSize"
+        android:visibility="invisible"
+        android:textColor="@color/colorAccent" />
+
+
+    <RelativeLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_marginTop="@dimen/defaultMarginTop">
+
+        <com.finalyearproject.edu_teach.ChalkEditText
+            android:id="@+id/loginName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/defaultMarginTop"
+            android:layout_marginStart="@dimen/defaultMarginStart"
+            android:hint="@string/name"
+            android:visibility="gone"
+            android:textColorHint="@color/white"/>
+
+        <com.finalyearproject.edu_teach.ChalkEditText
+            android:id="@+id/loginEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:layout_below="@+id/loginName"
+            android:layout_marginTop="@dimen/defaultMarginTop"
+            android:layout_marginStart="@dimen/defaultMarginStart"
+            android:hint="@string/email"
+            android:textColorHint="@color/white"/>
+
+        <com.finalyearproject.edu_teach.ChalkEditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:layout_below="@id/loginEmailId"
+            android:layout_marginTop="@dimen/defaultMarginTop"
+            android:layout_marginStart="@dimen/defaultMarginStart"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"/>
+
+        <com.finalyearproject.edu_teach.ChalkTextView
+            android:id="@+id/loginOrSignupUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPassword"
+            android:textAlignment="center"
+            android:padding="@dimen/mainMenuButtonPadding"
+            android:layout_marginTop="27dp"
+            android:text="@string/login"
+            android:textSize="@dimen/clickableTextView"
+            android:textColor="@color/white"
+            android:onClick="signupOrLoginUser"/>
+
+
+    </RelativeLayout>
+
+    <Switch
+        android:id="@+id/optionSwitch"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLayoutChangeClick"
+        android:layout_below="@+id/loginLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="39dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.finalyearproject.edu_teach.StudyMaterialAndAssignmentActivity">
+
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/headerTextSize" />
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/footerTextSize" />
+
+
+    <com.finalyearproject.edu_teach.ChalkEditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:layout_marginStart="@dimen/defaultMarginStart"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:hint="@string/title"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/white" />
+
+
+    <com.finalyearproject.edu_teach.ChalkEditText
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="@dimen/defaultMarginStart"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:ems="10"
+        android:hint="@string/link"
+        android:lines="2"
+        android:textColor="@color/green"
+        android:textColorHint="@color/white" />
+
+
+    <com.finalyearproject.edu_teach.ChalkEditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/link"
+        android:layout_marginStart="@dimen/defaultMarginStart"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/timeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginStart="@dimen/defaultMarginStart"
+        android:hint="@string/time"
+        android:onClick="openCalendar"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/clickableTextView" />
+
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeText"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:onClick="submitObjective"
+        android:padding="@dimen/mainMenuButtonPadding"
+        android:text="@string/submit"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/clickableTextView" />
+
+    <com.finalyearproject.edu_teach.ChalkTextView
+        android:id="@+id/previousAssignments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:onClick="listOfAssignments"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/clickableTextView" />
+
+    <DatePicker
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/header"
+        android:background="@color/white"
+        android:onClick="setDate"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
